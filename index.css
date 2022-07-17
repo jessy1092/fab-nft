@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  background-color: rgb(33, 33, 33);
+}
+
+iframe {
+  border: none;
+  transform: scale(0.125);
+  transform-origin: 0 0;
+}
+
+#wrap {
+  width: 270px;
+  height: 480px;
+  overflow: hidden;
+}
+
+#action {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 480px;
+  padding-left: 40px;
+}
+
+#download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  background-color: #205072;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#download.hidden {
+  display: none;
+}
+
+#loading {
+  color: white;
+}
+
+#loading.hidden {
+  display: none;
+}
