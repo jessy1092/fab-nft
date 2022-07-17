@@ -45,7 +45,7 @@ DownloadButton.addEventListener('click', (e) => {
   }
 });
 
-const [_, tokenId] = window.location.pathname.split('/');
+const [_, _fab, tokenId] = window.location.pathname.split('/');
 
 if (parseInt(tokenId) > 0) {
   NFT.setAttribute(
