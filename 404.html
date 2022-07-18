@@ -9,11 +9,17 @@
   </head>
   <body>
     <div id="wrap">
-      <iframe id="nft-content" src="" width="2160" height="3840"></iframe>
+      <iframe id="nft-content" class="HD" src=""></iframe>
     </div>
     <div id="action">
+      <select id="size">
+        <option value="">--選尺寸--</option>
+        <option value="qHD">540x960</option>
+        <option value="HD" selected>1080x1920</option>
+        <option value="FourK">2160x3840</option>
+      </select>
       <button class="hidden" id="download">Download</button>
-      <div id="loading" class="show">Drawing</div>
+      <div id="loading" class="hidden">Drawing</div>
     </div>
     <script type="module" src="./index.js"></script>
   </body>

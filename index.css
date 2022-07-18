@@ -8,8 +8,30 @@ body {
 
 iframe {
   border: none;
-  transform: scale(0.125);
   transform-origin: 0 0;
+}
+
+iframe.sHD {
+  width: 270px;
+  height: 480px;
+}
+
+iframe.qHD {
+  width: 540px;
+  height: 960px;
+  transform: scale(0.5);
+}
+
+iframe.HD {
+  width: 1080px;
+  height: 1920px;
+  transform: scale(0.25);
+}
+
+iframe.FourK {
+  width: 2160px;
+  height: 3840px;
+  transform: scale(0.125);
 }
 
 #wrap {
@@ -20,7 +42,9 @@ iframe {
 
 #action {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 270px;
   height: 480px;
   padding-left: 40px;
@@ -49,4 +73,9 @@ iframe {
 
 #loading.hidden {
   display: none;
+}
+
+#size {
+  width: 120px;
+  margin-bottom: 20px;
 }
